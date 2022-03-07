@@ -1,0 +1,46 @@
+.prices {
+    text-align: center;
+    height: auto;
+
+    // .prices__content
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 25px 0 0 0 ;
+        background-color: $black-light;
+        height: 250px;
+        padding: 0 10px;
+    }
+
+    // .prices__title
+    &__title {
+        text-transform: uppercase;
+        font-size: 1.8rem;
+        color: #fff;
+
+        @media (max-width:540px) {
+            font-size: 1.6rem;
+        }
+    }
+
+    // .prices__description
+    &__description {
+        padding: 12px 0 21px 0;
+        font-weight: 300;
+        font-size: 1.6rem;
+        line-height: 1.5;
+        color: #fff;
+
+        @media (max-width:540px) {
+            font-size: 1.4rem;
+        }
+    }
+
+    // .prices__btn
+    &__btn {
+        @extend %button;
+    }
+}
+

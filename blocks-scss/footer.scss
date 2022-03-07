@@ -1,0 +1,271 @@
+.footer {
+	height: 300px;
+	background-color: $black-light;
+	padding: 55px 0 60px 0;
+  
+	// .footer__inner
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		padding: 0 17px;
+	}
+}
+
+
+.footer-newsletter {
+	width: 33.33333%;
+	padding-right: 30px;
+
+	// .footer-newsletter__title
+	&__title {
+		text-transform: uppercase;
+		font-size: 1.8rem;
+		padding-bottom: 29px;
+	}
+
+	// .footer-newsletter__subtitle
+	&__subtitle {
+		text-transform: uppercase;
+		font-weight: 600;
+		font-size: 1.4rem;
+		line-height: 1.25;
+		padding-bottom: 16px;
+		color: #fff;
+	}
+
+	// .footer-newsletter__form
+	&__form {
+	display: flex;
+	flex-wrap: wrap;
+	}
+
+	// .footer-newsletter__mail
+	&__mail {
+		display: inline-block;
+		background-color: $input-color;
+		width: 337px;
+		min-width: 200px;
+		height: 35px;
+		margin-bottom: 14px;
+		text-transform: uppercase;
+		font-size: 1.2rem;
+		padding-left: 23px;
+		margin-right: 20px;
+	}
+
+	// .footer-newsletter__btn
+	&__btn {
+		display: inline-block;
+		width: 200px;
+		height: 35px;
+		font-size: 1.2rem;
+
+		background-color: $red;
+		color: #fff;
+
+		padding-left: 23px;
+		text-align: left;
+		text-transform: uppercase;
+
+	&:hover {
+		transform: scale(1.05);
+		}
+	}
+}
+
+.footer-info {
+	width: 33.33333%;
+	// .footer-info__logo
+	&__logo {
+	display: block;
+	width: 127px;
+	height: auto;
+	margin: -7px auto 19px;
+	}
+
+	// .footer-info__description
+	&__description {
+		font-size: 1.3rem;
+		line-height: 1.7;
+		padding-bottom: 7px;
+		color: #fff;
+	}
+
+	// .footer-info__phone
+	&__phone {
+		display: inline-block;
+		font-style: italic;
+		font-weight: 600;
+		font-size: 2rem;
+		padding: 0 20px 10px 0;
+		cursor: pointer;
+		color: #fff;
+
+		span {
+			font-style: normal;
+			font-size: 1.3rem;
+			font-weight: 400;
+			padding-right: 9px;
+		}
+	}
+
+	// .footer-info__email
+	&__email {
+		display: inline-block;
+		font-style: italic;
+		font-weight: 600;
+		font-size: 2rem;
+		cursor: pointer;
+		color: #fff;
+
+		span {
+			font-style: normal;
+			font-size: 1.3rem;
+			font-weight: 400;
+			padding-right: 9px;
+		}
+	}
+}
+
+// зміна кольору для google та safari
+input::-webkit-input-placeholder { color: $black; }
+
+
+.footer-company {
+	width: 33.33333%;
+	display: flex;
+	justify-content: space-around;
+	padding: 0 15px;
+
+	// .footer-company__col
+	&__col {
+		display: inline-block;
+	}
+
+	// .footer-company__title
+	&__title {
+		font-size: 1.8rem;
+		text-transform: uppercase;
+		padding-bottom: 30px;
+	}
+
+	// .footer-company__list
+
+	&__list {
+		margin-left: 10px;
+		li {
+			font-size: 1.3rem;
+			padding-bottom: 10px;
+			background: url(../images/arrow-right.png) left 2px no-repeat;
+			padding-left: 15px;
+			color: #fff;
+		}
+	}
+}
+
+
+@media (max-width:991px) {
+	.footer__inner {
+		padding: 0;
+	}
+
+	.footer-newsletter {
+		width: 30%;
+		min-width: 230px;
+	}
+
+	.footer-info {
+		width: 40%;
+	}
+
+	.footer-company {
+		width: 30%;
+	}
+ }
+
+@media (max-width:767px) {
+	.footer {
+		height: auto;
+		padding: 25px 0;
+	}
+
+	.footer__inner {
+		flex-wrap: wrap;
+	}
+
+	.footer-newsletter {
+		display: flex-inline;
+		order: 2;
+		width: 50%;
+		margin-top: 40px;
+		padding-right: 0;
+	}
+
+	.footer-newsletter__title{
+		font-size: 1.4rem;
+		padding-bottom: 15px;
+	}
+
+	.footer-newsletter__subtitle{
+		font-size: 1.2rem;
+	}
+
+	.footer-info {
+		order: 1;
+		width: 100%;
+	}
+
+	.footer-info__email {
+		font-size: 1.6rem;
+	}
+	.footer-info__phone {
+		font-size: 1.6rem;
+	}
+
+	.footer-company {
+		margin-top: 30px;
+		display: flex;
+		text-align: centr;
+		justify-content: center;
+		width: 50%;
+		order: 3;
+	}
+
+	.footer-company__col {
+		padding: 0 30px;
+	}
+
+	.footer-company__title {
+		padding-bottom: 15px;
+	}
+}
+
+@media (max-width:540px) { 
+
+	.footer-newsletter {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.footer-newsletter__mail {
+		width: 100%;
+		margin-right: 0;;
+	}
+
+	.footer-info {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.footer-info__description {
+		text-align: center;
+	}
+
+	.footer-company {
+		width: 100%;
+	}
+}

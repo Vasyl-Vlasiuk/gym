@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="live">
+
+        <div class="live__item">
+            <div class="live__header">
+                <div class="live__name">LIVE <span>spinning</span></div>
+                <div class="live__place">room 2</div>
+            </div>
+            <div class="live__video">
+                <div class="embed">
+                    <iframe src="https://www.youtube.com/embed/_4dqtjMUHKg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="live__item">
+            <div class="live__header">
+                <div class="live__name">LIVE <span>spinning</span></div>
+                <div class="live__place">room 3</div>
+            </div>
+            <div class="live__video">
+                <div class="embed">
+                    <iframe src="https://www.youtube.com/embed/J3tRz0pyfys" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                </div>
+            </div>
+        </div>
+
+        <div class="live__item">
+            <div class="live__header">
+                <div class="live__name">LIVE <span>spinning</span></div>
+                <div class="live__place">room 4</div>
+            </div>
+            <div class="live__video">
+                <div class="embed">                    
+                    <iframe src="https://www.youtube.com/embed/MOC59W1xPD0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

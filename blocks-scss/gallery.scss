@@ -1,0 +1,91 @@
+.gallery {
+    text-align: center;
+    min-width: 0;
+    // .gallery__items
+    &__inner {
+        display: flex;
+    }
+}
+.block-name {
+}
+
+.image-slider {
+
+    padding:  30px 0 70px 0;
+		// .image-slider__wrapper
+		&__wrapper {
+		}
+
+		// .image-slider__slide
+		&__slide {
+		}
+
+		// .image-slider__image
+		&__image {
+            max-width: 100%;
+        }
+}
+
+
+
+.swiper-container {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.swiper-wrapper {
+}
+
+.swiper-slide {
+}
+
+// Стрілочки
+.image-slider .swiper-button-prev::after, 
+.image-slider .swiper-button-next::after {
+    color: $yellow;
+    font-size: 3.5rem;
+
+    @media (max-width:540px) {
+        font-size: 2rem;
+    }
+} 
+
+// Пагінація
+.image-slider .swiper-pagination {
+    bottom: 0;
+}
+
+// Булети
+.image-slider .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    line-height: 12px;
+    font-size: 1.4rem;
+    background-color: $yellow;
+
+    @media (max-width:540px) {
+        width: 7px;
+        height: 7px;
+    }
+}
+
+// // Мультирядність
+// .image-slider {
+//     height: 700px;
+// }
+.image-slider .swiper-slide {
+    height: 700px;
+    overflow: hidden;
+}
+
+
+// // Вертикальний слайдер
+// .image-slider {
+//     padding: 0 0 0 0;
+//     height: 450px;
+// }
+
+/* // ефект куб
+.image-slider {
+    width: 500px;
+} */

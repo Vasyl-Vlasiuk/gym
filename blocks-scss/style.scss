@@ -1,0 +1,182 @@
+// templates
+@import "../templates/nullstyle";
+@import "../templates/variables";
+@import "../templates/template";
+@import "../templates/mixins";
+@import "../templates/blog-score";
+@import "../templates/embed";
+// ===================================
+
+// blocks-scss
+@import "header";
+@import "social-networks";
+@import "menu";
+@import "intro";
+@import "live";
+@import "links-classes";
+
+@import "classes";
+@import "prices";
+
+@import "trainers";
+@import "events";
+@import "blog";
+
+@import "gallery";
+@import "partner";
+
+@import "map-sceduale";
+@import "twitter-box";
+@import "footer";
+
+@import "header-block";
+@import "join";
+// ===================================
+
+// Pages
+@import "../about";
+@import "../timetable";
+@import "../trainers";
+@import "../classes";
+@import "../class-single";
+@import "../blogs";
+@import "../blog-single";
+
+@import "../pricing";
+@import "../contacts";
+// ===================================
+
+
+.wraper {
+    overflow: hidden;
+    max-width: 1500px;
+    width: 100%;
+    background-color: $gray-light;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 1.5rem;
+    margin: 0 auto;
+
+    @media (max-width:575px) {
+        padding: 0 1rem;
+    }
+}
+
+.sticky {
+    position: fixed;
+    max-width: 1500px;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    margin: 0 auto;
+}
+
+.top {
+    margin-top:  140px;
+
+    @media (max-width:800px) {
+        margin-top: 85px;
+    }
+}
+
+//  Стилізація основної сторінки 
+.section-blocks {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media (max-width:1170px) {
+        justify-content: space-around;
+    }
+}
+
+.section-classes {
+    display: inline-block;
+    width: 100%;
+    max-width: 770px;
+    margin-bottom: 50px;
+
+    @media (max-width:1170px) {
+       max-width: 1000px;
+    }
+
+}
+
+.section-prices {
+    display: inline-block;
+    width: 100%;
+    max-width: 370px;
+    margin-bottom: 50px;
+
+    @media (max-width:1170px) {
+        margin-right: 30px;
+     }
+
+    @media (max-width:800px) {
+        margin-right: 0;
+        max-width: 600px;
+        height: 100%;
+    }
+}
+
+.section-trainers {
+    display: inline-block;
+    width: 100%;
+    max-width: 370px;
+    margin-bottom: 50px;
+
+    @media (max-width:800px) {
+        margin-right: 0;
+        max-width: 600px;
+        height: 100%;
+    }
+}
+
+.section-events {
+    display: inline-block;
+    width: 100%;
+    max-width: 370px;
+    margin-bottom: 50px;
+
+    @media (max-width:1150px) {
+        margin-right: 30px;
+     }
+
+    @media (max-width:800px) {
+        margin-right: 0;
+        max-width: 600px;
+        height: 100%;
+    }
+}
+
+.section-blog {
+    display: inline-block;
+    width: 370px;
+    margin-bottom: 50px;
+
+    @media (max-width:800px) {
+        margin-right: 0;
+        max-width: 600px;
+        height: 100%;
+    }
+}
+
+.section-gallery {
+    max-width: 770px;
+    margin-bottom: 50px;
+
+    @media (max-width:1170px) {
+        max-width: 100%;
+    }
+}
+
+.section-partner {
+    @media (max-width:1170px) {
+        width: 100%;
+    }
+}

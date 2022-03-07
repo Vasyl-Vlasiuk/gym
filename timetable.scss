@@ -1,0 +1,99 @@
+.filter {
+    margin: 70px 0 50px;
+    
+    // .filter__item
+    &__item {
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 3rem;
+        text-transform: uppercase;
+        color: $black;
+        margin-right: 25px;
+        transition: border-bottom 0.2s linear;
+
+        &:hover {
+            border-bottom: 3px solid $black;
+            width: 100%;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.timetable {
+    min-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+    background-color: #fff;
+    color: #777d76;
+
+    th {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        width: 145px;
+        height: 100px;
+        background-color: $black-light;
+        color: $yellow;
+
+        @media (max-width: 800px) {
+            height: 50px;
+            font-size: 1.1rem;
+        }
+        &:first-child {
+            background-color: rgb(57, 57, 57);
+        }
+    }
+
+    &__row>td{
+        background-color: #99e5f9;
+        color: #fff;
+    }
+    
+    td {
+        height: 100px;
+        font-size: 1.2rem;
+        line-height: 1.4;
+        text-align: center;
+
+        @media (max-width: 800px) {
+            height: 50px;
+        }
+
+        &:nth-child(odd) {
+           background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        &:first-child {
+            background-color: $black;
+            color: #fff;
+        }
+     }
+}
+
+
+.tbl-red {
+    color: #ff8b8b;
+}
+
+.tbl-pink {
+    color: #d97fe0;
+}
+
+.tbl-black {
+    color: #81cae1;
+}
+
+.tbl-green {
+    color: #5c9955;
+}
+
+.tbl-cyan {
+    color: #55ccba;
+}
+
+div.scrollmenu {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+}

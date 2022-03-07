@@ -1,0 +1,18 @@
+.links {
+    width: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width:400px) {
+        width: 100px;
+    }
+
+    // .links__item
+    &__item {
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        fill: $yellow;
+    }
+}

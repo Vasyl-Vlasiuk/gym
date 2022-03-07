@@ -1,0 +1,131 @@
+// join
+.join {
+    display: flex;
+    min-height: 250px;
+    background-color: $black-light;
+
+    margin-bottom: 120px;
+
+    @media (max-width:800px) {
+        margin-bottom: 50px;
+    }
+
+    // .join__inner
+    &__inner {
+        display: flex;
+        padding: 30px 0;
+        margin: 0 -15px;
+
+        @media (max-width:800px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 0;
+        }
+    }
+
+    // .join__item
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        border-right: 2px solid $yellow;
+
+        @media (max-width:800px) {
+            border: 0;
+        }
+
+        &:last-child {
+            min-width: 250px;
+            margin: 0 auto;
+            border: 0;
+            @media (max-width:800px) {
+                width: 100%;
+                margin-top: 40px;
+            }
+        }
+    }
+
+    // .join__title
+    &__title {
+        font-size: 3rem;
+        font-weight: 700;
+        font-style: italic;
+        padding-bottom: 5px;
+
+        @media (max-width:800px) {
+            font-size: 2rem;
+        }
+       
+    }
+
+    // .join__subtitle
+    &__subtitle {
+        text-align: center;
+        font-size: 2.4rem;
+        font-weight: 600;
+        padding-bottom: 24px;
+        color: #fff;
+
+        @media (max-width:800px) {
+            padding-bottom: 14px;
+            font-size: 1.8rem;
+        }
+    }
+
+    // .join__description
+    &__description {
+        text-align: center;
+        font-size: 1.4rem;
+        padding-bottom: 20px;
+        line-height: 1.3;
+        color: #fff;
+        
+    }
+
+    // .join__btn
+    &__btn {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 270px;
+        height: 40px;
+        font-size: 1.2rem;
+        border-radius: 5px;
+        background-color: $red;
+        color: #fff;
+    }
+
+    // .join__btn--white
+    &__btn--white {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 130px;
+        height: 40px;
+        font-size: 1.2rem;
+        background-color: #fff;
+        border-radius: 3px;
+        color: $black-light;
+        margin-right: 20px;
+    }
+
+    // .join__btn--blue
+    &__btn--blue{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 130px;
+        height: 40px;
+
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        background-color: #a1eef7;
+        color: $black;
+        border-radius: 3px;
+    }
+}

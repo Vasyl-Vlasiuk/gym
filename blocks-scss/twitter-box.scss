@@ -1,0 +1,40 @@
+.twitter-box {
+    display: flex;
+    align-items: center;
+    max-width: 780px;
+    height: 300px;
+    margin: 0 auto;
+    padding-right: 10px;
+
+    @media (max-width:800px) {
+        height: 200px;
+    }
+
+    // .twitter-box__item
+    &__item {
+        display: inline-block;
+        margin-left: 10px;
+    }
+
+    // .twitter-box__icon
+    &__icon {
+        width: 78px;
+        height: 78px;
+        fill: $modal-color;
+    }
+
+    // .twitter-box__text
+    &__text {
+        font-size: 1.4rem;
+        line-height: 1.5;
+        color: $black-light;
+        margin-left: 45px;
+        span {
+            color: #5795ce;
+        }
+
+        @media (max-width:991px) {
+            margin-left: 20px;
+        }
+    }
+}
