@@ -1,0 +1,34 @@
+//! Заголовки, общие БЄМ блоки и проче...
+//! =====================================
+.block-name {
+	display: block;
+	text-align: center;
+	font-size: rem(30);
+
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-transform: uppercase;
+	color: $black-light;
+
+   margin-bottom: rem(25);
+}
+
+// style for classes
+.action-link {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: rem(20);
+
+   // .links__item
+   &__item {
+      display: inline-block;
+      width: rem(14);
+      height: rem(14);
+      fill: $yellow;
+      transition: all 0.3s linear;
+
+      &:hover {
+         fill: #fff;
+      }
+   }
+}

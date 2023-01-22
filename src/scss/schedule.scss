@@ -1,0 +1,89 @@
+.map__schedule-wrapper {
+   max-width: rem(370);
+   @include adaptiveValue("width", 370, 300, 1200, 767);
+   z-index: 2;
+
+   @media (max-width:$mobile) {
+      display: none;
+   }
+}
+
+.schedule {
+
+   &__content {
+      display: inline-flex;
+      flex-direction: column;
+      min-height: 100%;
+      width: 100%;
+      background-color: $modal-color;
+      padding: rem(28) rem(22);
+   }
+
+   // .map-scedule__title
+   &__title {
+      text-align: center;
+      font-family: 'Open Sans Condensed', sans-serif;
+      font-weight: 300;
+      font-size: rem(30);
+      padding-bottom: rem(20);
+
+      span {
+         font-family: 'Open Sans', sans-serif;
+         font-weight: 600;
+         font-size: rem(30);
+      }
+   }
+
+   // .map-scedule__plan
+   &__plan {
+      display: flex;
+      flex-direction: column;
+   }
+
+   // .map-scedule__item
+   &__item {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      min-width: rem(225);
+      font-size: rem(15);
+      padding: rem(17) 0 rem(11) 0;
+      border-bottom: 1px dotted #fff;
+
+      &:first-child {
+         padding-top: 0;
+      }
+   }
+
+   // .map-scedule__day
+   &__day {
+      background: url(../img/map/calendar.png) left no-repeat;
+      padding-left: rem(25);
+      color: #fff;
+   }
+
+   // .map-scedule__hours
+   &__hours {
+      color: #fff;
+   }
+
+   // .map-sceduale__text
+   &__text {
+      display: flex;
+      flex: 1 0 auto;
+      align-items: center;
+      text-align: center;
+      font-size: rem(16);
+      line-height: 1.4;
+      padding: rem(15) 0;
+      color: #fff;
+   }
+
+   // .map-sceduale__enjoy
+   &__enjoy {
+      text-align: center;
+      font-size: rem(30);
+      font-weight: 600;
+      font-style: italic;
+   }
+}

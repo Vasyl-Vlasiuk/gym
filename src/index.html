@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Home"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header-intro.htm',{})
+		@@include('html/_header.htm',{})
+
+		<main class="page">
+			@@include('html/_intro-home.htm',{})
+			@@include('html/_live-stream.htm',{})
+
+			<!-- CLASSES / MEMBERSHIP PRICES / TRAINERS / EVENTS / BLOG -->
+			<section class="section">
+				<div class="section__container">
+					<div class="section__inner home-5-elem">
+						@@include('html/_classes.htm',{})
+						@@include('html/_membership-price.htm',{})
+
+						@@include('html/_trainers.htm',{})
+						@@include('html/_events.htm',{})
+						@@include('html/_blog.htm',{})
+					</div>
+				</div>
+			</section>
+
+			<!-- GALERY / PARTNER -->
+			<section class="section">
+				<div class="section__container">
+					<div class="section__inner section__inner--galery">
+						@@include('html/_galery.htm',{})
+						@@include('html/_partner.htm',{})
+					</div>
+				</div>
+			</section>
+
+			<!-- Map -->
+			<div class=" map">
+
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.218542723223!2d-118.33176328435425!3d34.08954148059574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bf337032e6bd%3A0x9f8884792eb5203e!2sGold&#39;s%20Gym!5e0!3m2!1sru!2sua!4v1606236690960!5m2!1sru!2sua"
+					width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+					tabindex="0">
+				</iframe>
+
+				<div class="map__container">
+					<div class="map__inner ">
+						<div class="map__schedule-wrapper schedule">
+							@@include('html/_schedule.htm',{})
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section class="section">
+				<div class="section__container">
+					@@include('html/_twitter-box.htm',{})
+				</div>
+			</section>
+
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_sprite-icons.htm',{})
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

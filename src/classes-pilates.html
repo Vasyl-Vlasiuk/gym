@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Blog-post"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+
+		<main class="page">
+			<!-- INTRO -->
+			<div class="intro">
+				<div class="intro__container">
+					<div class="intro__inner">
+						<div class="intro__text intro__text-long-box">CLASSES ><span>pilates</span></div>
+					</div>
+				</div>
+			</div>
+
+			<!-- CLASSES PILATES -->
+			<div class="classes-pilates">
+				<div class="classes-pilates__container">
+					<div class="classes-pilates__inner">
+
+						<!--! INFO-PILATES ============== -->
+						<div class="classes-pilates__info info-pilates">
+
+							<div class="info-pilates__content">
+								<div class="info-pilates__media">
+									<img src="img/class-single/pilates.jpg" alt="">
+								</div>
+								<div class="info-pilates__description">
+									Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna
+									adipiscing iaculis. Curabitur vitae velit in neque dictum blandit. Proin in iaculis neque.
+									Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+									egestas. Curabitur vitae velit in neque dictum blandit. Proin in iaculis neque.
+									Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+									egestas.
+								</div>
+								<!-- Trainer/featured/pricing -->
+								<div class="info-pilates__blocks">
+
+									<!-- TRAINER -->
+									<div class="info-pilates__trainer trainer-pilates">
+										<div class="trainer-pilates__title">TRAINER</div>
+										<div class="trainer-pilates__img">
+											<img src="img/trainers/2.jpg" alt="trainer image">
+										</div>
+										<div class="trainer-pilates__name trainer">REBECCA SMITH</div>
+										<div class="trainer-pilates__profession">SPINNING</div>
+										<div class="trainer-pilates__description">
+											Creating the perfect body is no small matter.
+										</div>
+
+										<div class="trainer-pilates__action">
+											<div class="trainer-pilates__action-item">
+												<a class="trainer-pilates__action-heart" href="#" target="_blank">
+													<svg class="trainer-pilates__action-icon">
+														<use xlink:href="#heart"></use>
+													</svg>
+												</a>
+
+												<a class="trainer-pilates__action-like" href="#" target="_blank">
+													<svg class="trainer-pilates__action-icon">
+														<use xlink:href="#like"></use>
+													</svg>
+												</a>
+											</div>
+
+											<div class="trainer-pilates__action-item">
+												<a class="trainer-pilates__action-twitter" href="#" target="_blank">
+													<svg class="trainer-pilates__action-icon">
+														<use xlink:href="#twitter"></use>
+													</svg>
+												</a>
+
+												<a class="trainer-pilates__action-facebook" href="#" target="_blank">
+													<svg class="trainer-pilates__action-icon">
+														<use xlink:href="#facebook"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="info-pilates__feature feature">
+										<div class="feature__title">FEATURED</div>
+										<div class="feature__inner">
+											<div class="feature__item">Duis dapibus aliquam mi</div>
+											<div class="feature__item">Duis dapibus aliquam mi</div>
+											<div class="feature__item">Duis dapibus aliquam mi</div>
+											<div class="feature__item">Duis dapibus aliquam mi</div>
+											<div class="feature__item">Duis dapibus aliquam mi</div>
+										</div>
+									</div>
+
+									<div class="info-pilates__pricing-class pricing-class">
+										<div class="pricing-class__title">Pricing of Class</div>
+										<div class="pricing-class__inner">
+											<div class="pricing-class__item">
+												<div class="pricing-class__sum">3 days session</div>
+												<div class="pricing-class__price">$ 9,90</div>
+											</div>
+											<div class="pricing-class__item">
+												<div class="pricing-class__sum">7 days session</div>
+												<div class="pricing-class__price">$ 15,90</div>
+											</div>
+											<div class="pricing-class__item">
+												<div class="pricing-class__sum">15 days session</div>
+												<div class="pricing-class__price">$ 27,90</div>
+											</div>
+											<div class="pricing-class__item">
+												<div class="pricing-class__sum">30 days session</div>
+												<div class="pricing-class__price">$ 45,00</div>
+											</div>
+											<div class="pricing-class__item">
+												<div class="pricing-class__sum">60 days session</div>
+												<div class="pricing-class__price">$ 75,00</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+
+						<!--! ASIDE ============== -->
+						<aside class="classes-pilates__aside aside">
+							<!--? Schedule -->
+							<div class="aside__schedule schedule-aside">
+								@@include('html/_schedule.htm',{})
+							</div>
+
+							<!--? Membership-price -->
+							<div class="aside__membership-price membership-price-aside">
+								@@include('html/_membership-price.htm',{})
+							</div>
+
+						</aside>
+					</div>
+
+					<!-- JOIN -->
+					@@include('html/_join.htm',{})
+
+					<!-- QUOTE -->
+					<div class="classes-pilates__quote quote">
+						<div class="quote__content">
+							<div class="quote__inner">
+								<div class="quote__img">
+									<img src="img/about/quote-icon.png" alt="" class="quote__icon">
+								</div>
+								<div class="quote__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+									1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+									It has survived not only five centuries,
+								</div>
+								<div class="quote__worker">John White, <span> CEO - THEUNCREATIVELAB </span></div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_sprite-icons.htm',{})
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

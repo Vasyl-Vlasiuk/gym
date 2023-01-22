@@ -1,0 +1,170 @@
+.trainers {
+   // max-width: rem(370);
+   grid-area: grid-trainers;
+
+   // .trainers__inner
+   &__inner {
+      position: relative;
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      height: rem(250);
+      padding: rem(30) rem(12) rem(19) rem(12);
+
+      background-color: $modal-color;
+      gap: rem(28);
+
+      &::after {
+         content: "";
+         position: absolute;
+         top: rem(35);
+         left: 50%;
+         width: rem(1);
+         height: rem(180);
+         background-color: #fff;
+      }
+   }
+
+   &__prev {
+      position: absolute;
+      top: 55%;
+      left: 2%;
+      width: rem(15);
+      height: rem(15);
+      transform: rotate(180deg);
+      fill: $yellow;
+      cursor: pointer;
+   }
+
+   &__next {
+      position: absolute;
+      top: 55%;
+      right: 2%;
+      width: rem(15);
+      height: rem(15);
+      fill: $yellow;
+      cursor: pointer;
+   }
+
+}
+
+//! trainer =================
+.trainer {     
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+   max-width: rem(140);
+   width: 50%;
+
+   // .coach__img
+   &__img {
+      display: inline-block;
+      margin: 0 auto;
+      vertical-align: top;
+
+      img {
+         width: rem(80);
+         height: rem(80);
+         border-radius: 50%;
+      }
+   }
+
+   // .coach__name
+   &__name {
+      margin: rem(10) 0 rem(5) 0;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: rem(13);
+      white-space: nowrap;
+      text-align: center;
+   }
+
+   // .coach__profession
+   &__profession {
+      font-weight: 700;
+      font-style: italic;
+      font-size: rem(12);
+      text-transform: uppercase;
+      text-align: center;
+      padding-bottom: rem(10);
+   }
+
+   // .coach__description
+   &__description {
+      flex: 1 0 auto;
+      text-align: center;
+      font-weight: 300;
+      font-size: rem(12);
+      font-style: italic;
+      line-height: 1.3;
+      color: #ffffff;
+   }
+
+   // .coach__action
+   &__action {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      max-width: rem(150);
+      margin: 0 auto;
+   }
+
+   // .coach__item
+   &__action-items {
+      display: inline-flex;
+      justify-content: space-between;
+      width: rem(40) ;
+   }
+   &__action-icon{
+      width: rem(16);
+      height: rem(16);
+   }
+}
+
+
+.rating-trainer {
+   &__heart {
+      cursor: pointer;
+      width: rem(16);
+      height: rem(16);
+      fill: #b8b8b8;
+   }
+
+   &__red {
+      fill: #ff0000;
+   }
+
+   &__like {
+      cursor: pointer;
+      width: rem(16);
+      height: rem(16);
+      fill: #b8b8b8;
+
+   }
+
+   &__blue {
+      fill: #029ec6;
+   }
+
+   &__icon {
+      width: rem(16);
+      height: rem(16);
+   }
+}
+
+.social-networks-trainer {
+   &__link {
+
+   }
+   &__twitter, &__facebook {
+      width: rem(16);
+      height: rem(16);
+      fill: $modal-color;
+   }
+
+   &__icon {
+      width: rem(16);
+      height: rem(16);
+   }
+}

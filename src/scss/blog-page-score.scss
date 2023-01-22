@@ -1,0 +1,52 @@
+.score-networks {
+   display: flex;
+   width: rem(450);
+   @include adaptiveValue("gap", 22, 13);
+   padding-left: rem(15);
+
+
+   // .score-networks__item
+   &__item {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      align-items: center;
+
+
+      &>a {
+         display: flex;
+         align-items: center;
+
+         @media (max-width:$mobileSmall){
+            flex-direction: column;
+            margin-bottom: rem(5);
+              
+         }
+      }
+   }
+
+   // .score-networks__icon
+   &__icon {
+      display: inline-block;
+      height: rem(25);
+      width: auto;
+      margin: 0 auto;
+   }
+
+   // .score-networks__text
+   &__text {
+
+      font-size: rem(12);
+      font-style: italic;
+      font-weight: 300;
+      text-transform: uppercase;
+      display: inline-block;
+      color: $black-light;
+      padding-left: rem(7);
+
+      @media (max-width:$mobileSmall) {
+         font-size: rem(10);
+         padding: rem(5) 0 0 0;
+      }
+   }
+}

@@ -1,0 +1,238 @@
+//! TEAM-PREVIEW
+.team-preview {
+   display: flex;
+   align-items: center;
+   min-height: rem(351);
+   background-color: $black;
+   margin-top: rem(-1);
+   @include adaptiveValue("margin-bottom", 115, 50);
+   padding: rem(20) 0;
+
+   // .team-preview__inner
+   &__inner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+
+      @media (max-width:$mobile) {
+         flex-direction: column;
+      }
+   }
+
+   // .team-preview__photo
+   &__photo {
+      display: inline-block;
+      object-fit: contain;
+
+      max-width: rem(370);
+      height: 100%;
+
+      margin-left: rem(15);
+      @include adaptiveValue("margin-right", 100, 30, 1194, 768);
+
+      @media (max-width:$mobile) {
+         margin-bottom: rem(30);
+         margin-left: 0;
+         width: 80%;
+      }
+
+   }
+
+   // .team-preview__content
+   &__content {
+      text-align: center;
+      max-width: rem(430);
+      margin-right: rem(10);
+   }
+
+   // .team-preview__title
+   &__title {
+      @include adaptiveValue("font-size", 38, 20);
+      font-weight: 300;
+      padding: 0 0 rem(12) 0;
+      color: #fff;
+   }
+
+   // .team-preview__text
+   &__text {
+      @include adaptiveValue("font-size", 16, 14);
+      font-weight: 300;
+      line-height: 1.5;
+      padding-bottom: rem(14);
+      color: #fff;
+   }
+
+   // .team-preview__worker
+   &__worker {
+      @include adaptiveValue("font-size", 14, 12);
+      font-weight: 700;
+      padding-bottom: rem(15);
+
+      span {
+         font-style: italic;
+         font-weight: 400;
+      }
+   }
+}
+
+//! TRAINERS
+.team-trainers {
+   @include adaptiveValue("margin-bottom", 135, 50);
+
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+      gap: rem(10);
+
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+
+      @media (max-width:$tablet) {
+         grid-template-columns: 1fr 1fr;
+         grid-template-rows: 1fr 1fr 1fr;
+      }
+
+      @media (max-width: rem(640)) {
+         grid-template-columns: 1fr;
+         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      }
+   }
+
+   // .trainers__item
+   &__item {
+      max-width: rem(370);
+      width: 100%;
+      position: relative;
+      display: flex;
+      justify-content: space-around;
+      height: rem(250);
+      padding: rem(20) rem(12) rem(19) rem(12);
+
+      background-color: $modal-color;
+      gap: rem(28);
+
+      @media (max-width:$tablet) {
+         max-width: 100%;
+      }
+     
+      &::after {
+         content: "";
+         position: absolute;
+         top: rem(35);
+         left: 50%;
+         width: rem(1);
+         height: rem(180);
+         background-color: #fff;
+      }
+      
+      &:nth-child(even){
+         &::after {
+            background-color: $black-light;
+         }
+      }  
+   }
+}
+
+.trainer-details {
+   width: 50%;
+   max-width: rem(155);
+   align-self: center;
+
+   // .trainer-details__title
+   &__title {
+      font-size: rem(11);
+      font-weight: 700;
+      text-transform: uppercase;
+      padding-bottom: rem(10);
+   }
+
+   // .trainer-details__text
+   &__text {
+      font-size: rem(11);
+      line-height: 1.3;
+      color: #fff;
+   }
+
+   &__text--padding {
+      padding-bottom: rem(10);
+   }
+}
+
+.color-black {
+   color: $black-light;
+}
+
+.color-red {
+   color: #e25050;
+}
+
+.bg-color {
+   position: relative;
+   background-color: #fff;
+}
+
+
+//!QUOTE
+.quote {
+   @include adaptiveValue("margin-bottom", 135, 50);
+
+   // .quote__inner
+   &__inner {
+      color: black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   // .quote__img
+   &__img {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      @include adaptiveValue("width", 108, 80);
+      @include adaptiveValue("height", 108, 80);
+      border-radius: 50%;
+      background-color: $modal-color;
+
+      img {
+         display: inline-block;
+      }
+   }
+
+   // .quote__icon
+   &__icon {
+      @include adaptiveValue("width", 50, 30);
+      @include adaptiveValue("height", 50, 30);
+
+      img {
+         display: inline-block;
+      }
+   }
+
+   // .quote__text
+   &__text {
+      text-align: center;
+      font-family: "Open Sans Light";
+      @include adaptiveValue("font-size", 18, 15);
+      font-style: italic;
+      @include adaptiveValue("padding-top", 80, 25);
+      @include adaptiveValue("padding-bottom", 50, 20);
+      color: $gray-text;
+      line-height: 1.4;
+
+
+   }
+
+   // .quote__worker
+   &__worker {
+      font-size: rem(16);
+      color: #414141;
+
+      span {
+         text-transform: uppercase;
+         color: #95daf4;
+      }
+   }
+}

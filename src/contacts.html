@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Contacts"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/_header.htm',{})
+
+      <main class="page">
+
+         <!-- INTRO-MAP -->
+         <div class="intro-map">
+
+            <iframe
+               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.218542723223!2d-118.33176328435425!3d34.08954148059574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bf337032e6bd%3A0x9f8884792eb5203e!2sGold&#39;s%20Gym!5e0!3m2!1sru!2sua!4v1606236690960!5m2!1sru!2sua"
+               width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+               tabindex="0">
+            </iframe>
+
+            <div class="intro-map__container">
+               <div class="intro-map__inner">
+                  <div class="intro-map__text">Contacts</div>
+               </div>
+            </div>
+         </div>
+
+         <!-- INTRO-CONTACT -->
+         <div class="intro-contacts">
+            <div class="intro-contacts__container">
+               <div class="intro-contacts__inner">
+
+                  <form class="intro-contacts__form intro-form" action="meta">
+                     <div class="intro-form__title">send us a message</div>
+                     <div class="intro-form__text">
+                        We are an independent gym that is committed to working with you to
+                        gain the results you.
+                     </div>
+
+                     <div class="intro-form__items contacts-5-elem">
+                        <input class="intro-form__item grid-name" type="name" placeholder="your name">
+                        <input class="intro-form__item grid-mail" type="email" placeholder="email addres">
+                        <input class="intro-form__item grid-subject" type="name" placeholder="subject">
+                        <textarea class="intro-form__textarea grid-text" placeholder="your text" name="text"></textarea>
+                        <div class="intro-form__btn-block grid-btn">
+                           <button class="intro-form__btn" type="submit">submit your message</button>
+                           <p class="intro-form__textbtn">Make sure you put a valid email.</p>
+                        </div>
+                     </div>
+                  </form>
+
+                  <div class="intro-contacts__form info-content">
+                     <div class="info-content__title">contact info</div>
+                     <div class="info-content__description">Ut volutpat consectetur aliquam. Curabitur auctor in nis
+                        ulum ornare. Sed consequat, augue condimentum fermentum gravida, metus elit vehicula dui.
+                     </div>
+                     <a class="info-content__call" href="tel:1-900-342-98-76">+1-900-342-9876</a>
+                     <a class="info-content__mail" href="mailto:info@gymsports.com">info@gymsports.com</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <!-- SECTION-INFO -->
+         <div class="section-info">
+            <div class="section-info__container">
+               <div class="section-info__intro grid-4-elem">
+                  <div class="grid-schedule">
+                     @@include('html/_schedule.htm',{})
+                  </div>
+                  <div class="grid-events">
+                     @@include('html/_events.htm',{})
+                  </div>
+                  <div class="grid-blog">
+                     @@include('html/_blog.htm',{})
+                  </div>
+
+                  <!-- Conection -->
+                  <div class="section-info__conection contacts-conection grid-conection">
+                     <div class="contacts-conection__content">
+                        <div class="contacts-conection__title">WHY JOIN?</div>
+                        <div class="contacts-conection__subtitle">This is an awesome subhead</div>
+                        <div class="contacts-conection__description">Maecenas mattis vitae tellus vel interdum. Quisque
+                           lacinia mauris id convallis pretium. Aliquam id odio sit amet mauris porttitor iaculis a eu
+                           dui.</div>
+                     </div>
+                     <a href="" class="contacts-conection__btn">JOIN TODAY</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+         <!-- GALERY / PARTNER -->
+         <section class="section">
+            <div class="section__container">
+               <div class="section__inner--galery">
+                  @@include('html/_galery.htm',{})
+                  @@include('html/_partner.htm',{})
+               </div>
+            </div>
+         </section>
+
+         <section class="section">
+            <div class="section__container">
+               @@include('html/_twitter-box.htm',{})
+            </div>
+         </section>
+
+      </main>
+      @@include('html/_footer.htm',{})
+   </div>
+   @@include('html/_sprite-icons.htm',{})
+   @@include('html/_popup.htm',{})
+   @@include('html/_js.htm',{})
+</body>
+
+</html>

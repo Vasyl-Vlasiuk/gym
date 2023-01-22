@@ -1,0 +1,122 @@
+.events {
+   position: relative;
+   grid-area: grid-events;
+
+   // .events__item
+   &__inner {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-color: $black-light;
+      height: rem(250);
+      padding: rem(20) rem(30);
+      @include adaptiveValue("padding-right", 30, 15, 1200, 991);
+      @include adaptiveValue("padding-left", 30, 15, 1200, 991);
+
+      @media (max-width:$tablet){
+         @include adaptiveValue("padding-right", 30, 10, 991, 610);
+         @include adaptiveValue("padding-left", 30, 10, 991, 610);
+      }
+
+      @media (max-width: 610px){
+         @include adaptiveValue("padding-right", 30, 12, 610, 320);
+         @include adaptiveValue("padding-left", 30, 12, 610, 320);
+      }
+   }
+
+   &__separator {
+      height: rem(1);
+      width: 100%;
+      background-color: #fff;
+   }
+}
+
+.event-item {
+   display: flex;
+   justify-content: space-between;
+   max-width: 100%;
+   @include adaptiveValue("gap", 20, 5);
+
+   @media (max-width: 610px){
+      @include adaptiveValue("gap", 20, 12, 610, 320);
+   }
+
+   // .events__date
+   &__date {
+      font-weight: 700;
+      font-size: rem(14);
+      text-transform: uppercase;
+      padding-bottom: rem(8);
+   }
+
+   // .events__img
+   &__img {
+      display: inline-block;
+      overflow: hidden;
+      object-fit: contain;
+      width: rem(100);
+      height: rem(70);
+
+      img {
+         object-fit: contain;
+      }
+   }
+
+   // .events__content
+   &__content {
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 auto;
+   }
+
+   // .events__content-time
+   &__time {
+      text-align: center;
+      font-size: rem(10);
+      font-weight: 700;
+      color: $red;
+      letter-spacing: 0.2px;
+      padding: 0 0 rem(3) 0;
+   }
+
+   // .events__content-title
+   &__title {
+      text-align: center;
+      font-size: rem(14);
+      line-height: 1;
+      color: #fff;
+      margin-bottom: rem(4);
+   }
+
+   // .events__content-description
+   &__description {
+      font-size: rem(12);
+      line-height: 1.2;
+      color: #fff;
+      flex: 1 0 auto;
+   }
+
+   // .events__content-btn
+   &__btn {
+      display: inline;
+      max-width: rem(85);
+      padding: rem(5) rem(20);
+      margin: rem(7) auto 0;
+
+      border: 1.5px solid $yellow;
+      border-radius: rem(2);
+
+      color: $yellow;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: rem(10);
+      transition: background-color, color 0.2s linear;
+
+
+      &:hover {
+         background-color: $yellow;
+         color: $black-light;
+      }
+   }
+}

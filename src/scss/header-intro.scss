@@ -1,0 +1,162 @@
+.header-intro {
+	width: 100%;
+	background: url(../img/bg/5.jpg) center no-repeat;
+	background-size: cover;
+
+	// .header-intro__inner
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		height: 100vh;
+		min-height: rem(568);
+		max-height: rem(800);
+
+		@include adaptiveValue("padding-top", 227, 130);
+	}
+
+	// .header-intro__content
+	&__content {
+		display: flex;
+		flex-direction: column;
+		max-width: rem(540);
+
+		border-bottom: rem(4) solid $yellow;
+		background-color: $modal-color;
+	}
+
+	&__arrow {
+		display: block;
+		width: rem(200);
+		height: rem(40);
+
+		margin: rem(40) auto;
+		transition: transform 0.2s linear;
+
+		&:hover {
+			transform: translateY(rem(5));
+		}
+	}
+}
+
+.header-intro-box {
+	flex-direction: column;
+	padding: rem(17) rem(12) rem(20);
+
+	// .window-header-intro__title
+	&__title {
+		text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.08);
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-size: rem(48);
+		text-transform: uppercase;
+		padding-bottom: 7px;
+		color: #fff;
+
+		@media (max-width:$mobileSmall){
+			text-align: center;
+			font-size: rem(34);
+		}
+	}
+
+	// .window-header-intro__subtitle
+	&__subtitle {
+		text-transform: uppercase;
+		font-size: rem(24);
+		font-weight: 300;
+		padding-bottom: 0.3rem;
+		color: #fff;
+
+		@media (max-width:$mobileSmall){
+			text-align: center;
+			font-size: rem(20);
+		}
+	}
+
+	// .window-header-intro__description
+	&__description {
+		max-width: 410px;
+		font-size: rem(14);
+		font-weight: 300;
+		line-height: 1.4;
+		padding-bottom: rem(20);
+		color: #fff;
+
+		@media (max-width:$mobileSmall){
+			font-size: rem(12);
+			text-align: center;
+		}
+	}
+
+	// .window-header-intro__slide
+	// &__slide {
+	// 	width: 200px;
+	// 	height: 40px;
+	// 	position: absolute;
+	// 	left: 50%;
+	// 	bottom: 40%;
+	// 	z-index: 5;
+	// 	color: #000000;
+	// }
+	
+	&__more-information {
+		display: flex;
+		margin: 0 auto;
+	}
+
+	&__btn {
+		@extend .button--border;
+		margin: 0 auto 15px;
+	}
+}
+
+
+//====================================================================================================
+
+//Burger
+/*
+.icon-menu {
+	display: none;
+	@media (max-width: $mobile) {
+		display: block;
+		position: relative;
+		width: 30px;
+		height: 18px;
+		cursor: pointer;
+		z-index: 5;
+		span,
+		&::before,
+		&::after {
+			content: "";
+			transition: all 0.3s ease 0s;
+			left: 0px;
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			background-color: #000;
+		}
+		&::before {
+			top: 0px;
+		}
+		&::after {
+			bottom: 0px;
+		}
+		span {
+			top: calc(50% - 1px);
+		}
+		.menu-open & {
+			span {
+				transform: scale(0);
+			}
+			&::before {
+				transform: rotate(-45deg);
+				top: calc(50% - 1px);
+			}
+			&::after {
+				transform: rotate(45deg);
+				bottom: calc(50% - 1px);
+			}
+		}
+	}
+}
+*/

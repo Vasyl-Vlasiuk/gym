@@ -1,0 +1,35 @@
+.twitter-box {
+   display: flex;
+   align-items: center;
+   max-width: rem(780);
+   height: rem(300);
+   @include adaptiveValue("height", 300, 200, 1200, 320);
+   margin: 0 auto;
+
+   // .twitter-box__item
+   &__item {
+      display: inline-block;
+      margin-left: rem(10);
+   }
+
+   // .twitter-box__icon
+   &__icon {
+      width: rem(78);
+      @include adaptiveValue("width", 78, 50, 1200, 320);
+      height: rem(78);
+      fill: $modal-color;
+   }
+
+   // .twitter-box__text
+   &__text {
+      font-size: rem(14);
+      line-height: 1.5;
+      color: $black-light;
+      margin-left: rem(45);
+      @include adaptiveValue("margin-left", 45, 20, 1200, 320);
+
+      span {
+         color: #5795ce;
+      }
+   }
+}

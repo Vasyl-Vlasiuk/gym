@@ -1,0 +1,301 @@
+//====================================================================================================
+.footer {
+	display: flex;
+	min-height: 300px;
+	background-color: $black-light;
+	@include adaptiveValue("padding-bottom", 60, 30 );
+	@include adaptiveValue("padding-top", 55, 40 );
+  
+	// .footer__inner
+	&__inner {
+		display: flex;
+		gap: rem(30);
+		padding: 0 rem(17);
+
+		@media (max-width:$tablet){
+			@include adaptiveValue("padding-left", 15, 0, 991, 767 );
+			@include adaptiveValue("padding-right", 15, 0, 991, 767 );
+		}
+
+		@media (max-width:$mobile){
+			flex-wrap: wrap;
+			gap: 0;
+			padding: 0;
+		}
+	}
+}
+
+.newsletter-footer {
+	width: 35%;
+
+	@media (max-width:$mobile){
+		// display: inline-flex;
+		width: 50%;
+		order: 2;
+	}
+
+	@media (max-width:$mobileSmall){
+		width: 100%;
+		justify-content: center; 
+		text-align: center;
+		margin: 0 rem(20) rem(50);
+	}
+
+	// .newsletter-footer__title
+	&__title {
+		padding-bottom: rem(30);
+		text-transform: uppercase;
+		font-size: rem(18);
+		color: $yellow;
+
+		@media (max-width:$mobile){
+			 padding-bottom: rem(15); 
+		}
+	}
+
+	// .newsletter-footer__subtitle
+	&__subtitle {
+		text-transform: uppercase;
+		font-weight: 500;
+		font-size: rem(14);
+		line-height: 1.25;
+		padding-bottom: rem(16);
+		color: #fff;
+
+		@media (max-width:$mobile){
+			 display: inline-block; 
+		}
+	}
+
+	// .newsletter-footer__form
+	&__form {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	// .newsletter-footer__mail
+	&__mail {
+		width: 100%;
+		min-width: rem(200);
+		height: rem(35);
+		margin: 0 0 rem(14) 0;
+	
+		@extend .input;
+
+		@media (max-width:$mobileSmall){
+			 width: 100%; 
+		}
+	}
+
+	// .newsletter-footer__btn
+	&__btn {
+		position: relative;
+		display: inline-block;
+		width: rem(200);
+		height: rem(35);
+		font-size: rem(12);
+
+		background-color: $red;
+		color: #fff;
+
+		padding-left: rem(23);
+		text-align: left;
+		text-transform: uppercase;
+		opacity: 1;
+		transition: all 0.3s ease 0s;
+
+		&:hover {
+			background-color: #a92020;
+		}
+
+		
+
+	}
+
+	&__btn-icon {
+		position: absolute;
+		top: rem(50%);
+		right: 20px;
+		transform: translateY (rem(50%));
+		width: rem(15);
+		height: rem(15);
+		fill: #fff;
+		animation: right 0.2s linear;
+	}
+}
+
+
+.info-footer {
+	width: 35%;
+	
+	@media (max-width:$mobile){
+		text-align: center;
+		width: 100%;
+		order: 1;
+		margin-bottom: rem(50);
+	}
+
+	// .info-footer__logo
+	&__logo {
+	display: block;
+	width: rem(127);
+	height: auto;
+	margin: rem(-7) auto rem(19);
+	}
+
+	// .info-footer__description
+	&__description {
+		font-size: rem(13);
+		line-height: 1.7;
+		padding-bottom: rem(10);
+		color: #fff;
+	}
+
+	// .info-footer__phone
+	&__phone {
+		display: inline-block;
+		white-space: nowrap;
+		font-style: italic;
+		font-weight: 600;
+		font-size: rem(20);
+		padding: 0 rem(20) rem(10) 0;
+		cursor: pointer;
+		color: #fff;
+
+		span {
+			font-style: normal;
+			font-size: rem(14);
+			font-weight: 400;
+			padding-right: rem(9);
+		}
+	}
+
+	// .info-footer__email
+	&__email {
+		display: inline-block;
+		white-space: nowrap;
+		font-style: italic;
+		font-weight: 600;
+		font-size: rem(20);
+		cursor: pointer;
+		color: #fff;
+
+		span {
+			font-style: normal;
+			font-size: rem(14);
+			font-weight: 400;
+			padding-right: rem(9);
+		}
+	}
+
+}
+
+// зміна кольору для google та safari
+input::-webkit-input-placeholder { color: $black; }
+
+.companies-footer {
+	width: 30%;
+	display: flex;
+	justify-content: space-around;
+	gap: 15px;
+
+	@media (max-width:$mobile){
+		width: 50%;
+		order: 3;
+		justify-content: center;
+	}
+	@media (max-width:$mobileSmall){
+		width: 100%;
+		justify-content: space-around;
+		gap: rem(40);
+	}
+
+	// .companies-footer__col
+	&__col {
+		display: inline-block;
+	}
+
+	// .companies-footer__title
+	&__title {
+		font-size: rem(18);
+		text-transform: uppercase;
+		padding-bottom: rem(30);
+
+		@media (max-width:$mobile){
+			padding-bottom: rem(15); 
+	  }
+	}
+
+	// .companies-footer__list
+	&__list {
+		margin-left: rem(10);
+		li {
+			font-size: rem(14);
+			padding: 0 0 rem(10) rem(15);
+			background: url(../img/arrow-right.png) left 2px no-repeat;
+
+			color: #fff;
+
+			&:last-child {
+				padding-bottom: 0;
+			}
+		}
+	}
+}
+
+//* footer copyright ==================================
+//*=======================================================
+.copyright {
+	position: static;
+	z-index: 5;
+	width: 100%;
+	height: rem(40);
+	background-color: $black;
+	border-top: rem(4) solid $yellow;
+	@media (max-width:$tablet){
+		border-top: rem(3) solid $yellow;
+	}
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: rem(15);
+
+		height: rem(40);
+		padding: 0 rem(7);
+
+		@media (max-width:$mobileSmall){
+			padding: 0;
+		}
+	}
+
+	&__copy {
+		font-size: rem(12);
+		color: #fff;
+	}
+}
+
+
+.links {
+	display: flex;
+	gap: rem(12);
+
+	// .links__item
+	&__item {
+		// margin-left: rem(10);
+		
+	}
+
+	// .links__icon
+	&__icon {
+		width: rem(14);
+		height: rem(14);
+		fill: #fff;
+		transition: fill 0.2s linear;
+
+		&:hover {
+			fill: $yellow;
+		}
+	}
+}

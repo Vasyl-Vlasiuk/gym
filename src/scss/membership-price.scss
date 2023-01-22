@@ -1,0 +1,55 @@
+.membership-price {
+   grid-area: grid-membership-price;
+
+   // .prices__content
+   &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-color: $black-light;
+      height: rem(250);
+      padding: 0 rem(20);
+   }
+
+   // .prices__title
+   &__title {
+      width: 100%;
+      text-transform: uppercase;
+      line-height: 1.5;
+      font-size: rem(18);
+      color: #fff;
+   }
+
+   // .prices__description
+   &__description {
+      padding: rem(12) 0 rem(21) 0;
+      font-weight: 300;
+      font-size: rem(14);
+      line-height: 1.5;
+      color: #fff;
+   }
+
+   // .prices__btn
+   &__btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: rem(2) solid $yellow;
+      color: $yellow;
+
+      min-width: rem(140);
+      height: rem(40);
+      border-radius: rem(5);
+      text-transform: uppercase;
+      font-size: rem(12);
+      font-weight: 600;
+      transition: color, background-color 0.2s linear;
+
+      &:hover {
+         background-color: $yellow;
+         color: #000;
+      }
+   }
+}

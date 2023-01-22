@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Timetable"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+
+		<main class="page">
+
+         <!-- INTRO -->
+         <div class="intro">
+            <div class="intro__container">
+               <div class="intro__inner">
+                  <div class="intro__text">Timetable</div>
+               </div>
+            </div>
+         </div>
+
+         <div style="overflow-x:auto;">
+            <table class="timetable">
+                <caption class="filter">
+                    <a href="" class="filter__item">ALL</a>
+                    <a href="" class="filter__item">AEROBICS</a>
+                    <a href="" class="filter__item">CROSSFIT</a>
+                    <a href="" class="filter__item">BOXING</a>
+                    <a href="" class="filter__item">KIK BOXING </a>
+                    <a href="" class="filter__item">PILATES</a>
+                    <a href="" class="filter__item">SPINNING</a>
+                </caption>
+                <!-- Days -->
+                <tr>
+                    <th></th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                    <th>Sunday</th>
+                </tr>
+    
+                <tr class="timetable-row">
+                    <td>06.oo - 07.00</td>
+                    <td class="tbl-red">Aerobics - Room A</td>
+                    <td class="tbl-pink">Pilates - Room D</td>
+                    <td class="tbl-red">Aerobics - Room A</td>
+                    <td class="tbl-pink">Pilates - Room D</td>
+                    <td class="tbl-red">Aerobics - Room A</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>07.oo - 08.00</td>
+                    <td class="tbl-blue">Kik Boxing - Room B</td>
+                    <td class="tbl-green">Crossfit - Room B</td>
+                    <td></td>
+                    <td class="tbl-blue">Kik Boxing - Room B</td>
+                    <td>Spinning- Room D</td>
+                    <td class="tbl-green">Crossfit - Room B</td>
+                    <td class="tbl-blue">Kik Boxing - Room B</td>
+                </tr>
+                <tr>
+                    <td>08.oo - 09.00</td>
+                    <td class="tbl-cyan">Boxing - Room C</td>
+                    <td>Spinning- Room D</td>
+                    <td class="tbl-cyan">Boxing - Room C</td>
+                    <td>Spinning- Room D</td>
+                    <td></td>
+                    <td>Spinning- Room D</td>
+                    <td class="tbl-cyan">Boxing - Room C</td>
+                </tr>
+                <tr>
+                    <td >09.oo - 10.00</td>
+                    <td class="tbl-red">Aerobics - Room A</td>
+                    <td></td>
+                    <td class="tbl-red">Aerobics - Room A</td>
+                    <td class="tbl-green">Crossfit - Room B</td>
+                    <td class="tbl-red">Aerobics - Room A</td>
+                    <td></td>
+                    <td>Spinning- Room D</td>
+                </tr>
+                <tr>
+                    <td>10.oo - 11.00</td>
+                    <td class="tbl-pink">Pilates - Room D</td>
+                    <td class="tbl-green">Crossfit - Room B</td>
+                    <td></td>
+                    <td>Spinning- Room D</td>
+                    <td></td>
+                    <td>Spinning- Room D</td>
+                    <td class="tbl-pink">Pilates - Room D</td>
+                </tr>
+                <tr>
+                    <td>11.oo - 12.00</td>
+                    <td class="tbl-cyan">Boxing - Room C</td>
+                    <td class="tbl-pink">Pilates - Room D</td>
+                    <td>Boxing - Room C</td>
+                    <td class="tbl-pink">Pilates - Room D</td>
+                    <td></td>
+                    <td class="tbl-green">Crossfit - Room B</td>
+                    <td class="tbl-cyan">Boxing - Room C</td>
+                </tr>
+                <tr>
+                    <td>12.oo - 13.00</td>
+                    <td></td>
+                    <td class="tbl-green">Crossfit - Room B</td>
+                    <td></td>
+                    <td class="tbl-blue">Kik Boxing - Room B</td>
+                    <td>Spinning- Room D</td>
+                    <td></td>
+                    <td>Spinning- Room D</td>
+                </tr>
+                <tr>
+                    <td>13.oo - 14.00</td>
+                    <td class="tbl-blue">Kik Boxing - Room B</td>
+                    <td></td>
+                    <td></td>
+                    <td class="tbl-green">Crossfit - Room B</td>
+                    <td></td>
+                    <td></td>
+                    <td class="tbl-blue">Kik Boxing - Room B</td>
+                </tr>
+                <tr>
+                    <td>14.oo - 15.00</td>
+                    <td class="tbl-red">Aerobics - Room A</td>
+                    <td></td>
+                    <td class="tbl-red">Aerobics - Room A</td>
+                    <td>Spinning- Room D</td>
+                    <td class="tbl-red">Aerobics - Room A</td>
+                    <td>Spinning- Room D</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>15.oo - 16.00</td>
+                    <td class="tbl-cyan">Boxing - Room C</td>
+                    <td></td>
+                    <td class="tbl-cyan">Boxing - Room C</td>
+                    <td></td>
+                    <td></td>
+                    <td class="tbl-green">Crossfit - Room B</td>
+                    <td>Boxing - Room C</td>
+                </tr>
+                <tr>
+                    <td>16.oo - 17.00</td>
+                    <td class="tbl-pink">Pilates - Room D</td>
+                    <td class="tbl-green">Crossfit - Room B</td>
+                    <td></td>
+                    <td>Spinning- Room D</td>
+                    <td></td>
+                    <td>Spinning- Room D</td>
+                    <td></td>
+                </tr>
+            </table>
+         </div>
+
+         <!-- TRAINERS / EVENTS / BLOG -->
+			<section class="section">
+				<div class="section__container">
+					<div class="section__inner timetable-3-elem">
+						@@include('html/_trainers.htm',{})
+						@@include('html/_events.htm',{})
+						@@include('html/_blog.htm',{})
+					</div>
+				</div>
+			</section>
+
+         <!-- JOIN -->
+         @@include('html/_join.htm',{})
+
+         <!-- GALERY / PARTNER -->
+			<section class="section">
+				<div class="section__container">
+					<div class="section__inner section__inner--galery">
+						<!--? GALERY / PARTNER -->
+						@@include('html/_galery.htm',{})
+						@@include('html/_partner.htm',{})
+					</div>
+				</div>
+			</section>
+
+         <!-- TWITTER -->
+			<section class="section">
+				<div class="section__container">
+					@@include('html/_twitter-box.htm',{})
+				</div>
+			</section>
+
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_sprite-icons.htm',{})
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

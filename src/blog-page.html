@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Blog"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+
+		<main class="page">
+			<!-- INTRO -->
+			<div class="intro">
+				<div class="intro__container">
+					<div class="intro__inner">
+						<div class="intro__text">Blog</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Blogs -->
+			<div class="blog-page">
+				<div class="blog-page__container">
+					<div class="blog-page__inner">
+						<!--! MEDIA-CONTENT ============== -->
+						<div class="blog-page__media media-content">
+	
+							<!-- Articles -->
+							<div class="media-content__item">
+								<div class="media-content__title">
+									Donec quis quam a lorem volutpat vestibulum. Integer pharetra dolor. In in interdum tellus.
+								</div>
+								<img class="media-content__icon" src="img/blog/1.png" alt="icon">
+								<div class="media-content__content">
+									<img class="media-content__img" src="img/blog/run.jpg" alt="blog image">
+								</div>
+	
+								<div class="media-content__description">
+									<p>
+										Integer ornare libero nisi. Duis ac magna urna. Nulla facilisi. Phasellus at ante magna.
+										Quisque nec porta nulla. Suspendisse nec orci vel elit aliquet blandit in non orci. Vivamus
+										posuere dui eget lacinia rutrum. Cum sociis natoque penatibus et magnis dis parturient
+										montes, nascetur ridiculus mus. Sed ullamcorper neque sed consequat bibendum...
+									</p>
+	
+									<p class="show-text">
+										Integer ornare libero nisi. Duis ac magna urna. Nulla facilisi. Phasellus at ante magna.
+										Quisque nec porta nulla. Suspendisse nec orci vel elit aliquet blandit in non orci. Vivamus
+										posuere dui eget lacinia rutrum. Cum sociis natoque penatibus et magnis dis parturient
+										montes, nascetur ridiculus mus. Sed ullamcorper neque sed consequat bibendum...
+										<br>
+										Integer ornare libero nisi. Duis ac magna urna. Nulla facilisi. Phasellus at ante magna.
+										Quisque nec porta nulla. Suspendisse nec orci vel elit aliquet blandit in non orci. Vivamus
+										posuere dui eget lacinia rutrum. Cum sociis natoque penatibus et magnis dis parturient
+										montes, nascetur ridiculus mus. Sed ullamcorper neque sed consequat bibendum...
+										<br>
+										Integer ornare libero nisi. Duis ac magna urna. Nulla facilisi. Phasellus at ante magna.
+										Quisque nec porta nulla. Suspendisse nec orci vel elit aliquet blandit in non orci. Vivamus
+										posuere dui eget lacinia rutrum. Cum sociis natoque penatibus et magnis dis parturient
+										montes, nascetur ridiculus mus. Sed ullamcorper neque sed consequat bibendum...
+									</p>
+								</div>
+	
+								<div class="media-content__count">
+									@@include('html/_blog-page-score.htm',{})
+	
+									<div class="media-content__read-more">Read More</div>
+								</div>
+							</div>
+	
+							<div class="media-content__horizontal-line"></div>
+	
+							<!-- Post-image -->
+							<div class="media-content__item">
+								<div class="media-content__title">
+									Donec quis quam a lorem volutpat vestibulum. Integer pharetra dolor. In in interdum tellus.
+								</div>
+	
+								<img class="media-content__icon" src="img/blog/2.png" alt="icon">
+								<div class="media-content__content">
+									<img class="media-content__img" src="img/blog/stand-arm.jpg" alt="">
+								</div>
+								<div class="media-content__description">
+									Donec quis quam a lorem volutpat.
+								</div>
+	
+								<div class="media-content__count">
+									@@include('html/_blog-page-score.htm',{})
+									
+									<div class="media-content__read-more">Read More</div>
+								</div>
+							</div>
+	
+							<div class="media-content__horizontal-line"></div>
+	
+							<!-- Video -->
+							<div class="media-content__item">
+								<div class="media-content__title">
+									Donec quis quam a lorem volutpat vestibulum. Integer pharetra dolor. In in interdum tellus.
+								</div>
+	
+								<img class="media-content__icon" src="img/blog/3.png" alt="icon"">
+								<div class="media-content__content">
+									<iframe width="100%" height="400px" src="https://www.youtube.com/embed/W6IVEkFTNPU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</div>
+	
+								<div class="media-content__player">
+									<!-- <audio style="width:740px; height:30px; margin: 15px 15px 0px;" controls>
+												  <source src="audio/music.ogg" type="audio/ogg; codecs=vorbis">
+												  <source src="audio/music.mp3" type="audio/mpeg">
+												  Тег audio не поддерживается вашим браузером. 
+												  <a href="audio/music.mp3">Скачайте музыку</a>.
+											 </audio> -->
+								</div>
+								<div class="media-content__description">
+									Donec quis quam a lorem volutpat.
+								</div>
+	
+								<div class="media-content__count">
+									@@include('html/_blog-page-score.htm',{})
+				
+									<div class="media-content__read-more">Read More</div>
+								</div>
+							</div>
+	
+							<div class="media-content__horizontal-line"></div>
+	
+							<!--? Quote -->
+							<div class="media-content__item">
+								<div class="media-content__title">
+									Donec quis quam a lorem volutpat..
+								</div>
+	
+								<img src="img/blog/4.png" alt="" class="media-content__icon">
+	
+								<div class="media-content__description">
+									Integer ornare libero nisi. Duis ac magna urna. Nulla facilisi. Phasellus at ante magna. Quisque
+									nec porta nulla. Suspendisse nec orci vel elit aliquet blandit in non orci. Vivamus posuere dui
+									eget lacinia rutrum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+									ridiculus mus. Sed ullamcorper neque sed consequat bibendum...
+								</div>
+	
+								<div class="media-content__count">
+									@@include('html/_blog-page-score.htm',{})
+
+								</div>
+							</div>
+	
+							<div class="media-content__horizontal-line"></div>
+	
+							<!--? Musics -->
+							<div class="media-content__item">
+								<div class="media-content__title">
+									Donec quis quam a lorem volutpat.
+								</div>
+	
+								<img src="img/blog/5.png" alt="" class="media-content__icon">
+	
+								<div class="media-content__player">
+									<audio style="width: 100%; height:25px; padding: 0 15px 0 15px; margin:0 0 15px 0" controls>
+										<source src="audio/music.ogg" type="audio/ogg; codecs=vorbis">
+										<source src="audio/music.mp3" type="audio/mpeg">
+										Тег audio не поддерживается вашим браузером.
+										<a href="audio/music.mp3">Скачайте музыку</a>.
+									</audio>
+								</div>
+	
+								<div class="media-content__count">
+									@@include('html/_blog-page-score.htm',{})
+								
+								</div>
+							</div>
+	
+							<div class="media-content__horizontal-line"></div>
+	
+							<!--? Slider -->
+							<div class="media-content__item">
+								<div class="media-content__slider"></div>
+							</div>
+						</div>
+	
+						<!--! ASIDE ============== -->
+						<aside class="blog-page__aside aside">
+							<!--? Categories -->
+							<div class="aside__categories categories-aside">
+								<div class="categories-aside__title">CATEGORIES</div>
+	
+								<ul class="categories-aside__list">
+									<li class="categories-aside__item">EVENTS</li>
+									<li class="categories-aside__item">AEROBICS</li>
+									<li class="categories-aside__item">CROSSFIT</li>
+									<li class="categories-aside__item">SPINNING</li>
+									<li class="categories-aside__item">NEWS</li>
+								</ul>
+							</div>
+	
+							<!--? Recent-post -->
+							<div class="aside__recent-post recent-post-aside">
+								<div class="recent-post-aside__title">RECENT POSTS</div>
+								<div class="recent-post-aside__item">
+									<div class="recent-post-aside__name">Curabitur vitae velit</div>
+									<div class="recent-post-aside__data">25 May 2013</div>
+								</div>
+								<div class="recent-post-aside__item">
+									<div class="recent-post-aside__name">Vivamus at elit quis urna adipiscing iaculis</div>
+									<div class="recent-post-aside__data">25 May 2013</div>
+								</div>
+								<div class="recent-post-aside__item">
+									<div class="recent-post-aside__name">Curabitur vitae velit</div>
+									<div class="recent-post-aside__data">25 May 2013</div>
+								</div>
+								<div class="recent-post-aside__item">
+									<div class="recent-post-aside__name">Vivamus at elit quis urna adipiscing iaculis</div>
+									<div class="recent-post-aside__data">25 May 2013</div>
+								</div>
+							</div>
+
+							<!--? Schedule -->
+							<div class="aside__schedule schedule-aside">
+								@@include('html/_schedule.htm',{})
+							</div>
+
+							<!--? Trainers -->
+							<div class="aside__trainers trainers-aside">
+								@@include('html/_trainers.htm',{})
+							</div>
+
+							<!--? Membership-price -->
+							<div class="aside__membership-price membership-price-aside">
+								@@include('html/_membership-price.htm',{})
+							</div>
+
+							<!--? Tags -->
+							<div class="aside__tags tags-aside">
+								<div class="block-name">TAGS</div>
+
+								<div class="tags-aside__row">
+									<a href="" class="tags-aside__item">Maecenas</a>
+									<a href="" class="tags-aside__item">Nunc </a>
+									<a href="" class="tags-aside__item">Praesent </a>
+									<a href="" class="tags-aside__item">Nunc </a>
+									<a href="" class="tags-aside__item">Praesent </a>
+									<a href="" class="tags-aside__item">Nunc </a>
+									<a href="" class="tags-aside__item">Maecenas </a>
+									<a href="" class="tags-aside__item">Praesent </a>
+									<a href="" class="tags-aside__item">Nunc </a>
+								</div>
+	
+							</div>
+	
+							<!--? Arhive -->
+							<div class="aside__arhive arhive-aside">
+								<div class="arhive-aside__row">
+									<div class="arhive-aside__title">arhive</div>
+									<a href="" class="arhive-aside__item">
+										<img src="img/blog/arrow-right.png" alt=""> 2013
+									</a>
+									<a href="" class="arhive-aside__item">
+										<img src="img/blog/arrow-right.png" alt=""> 2012
+									</a>
+									<a href="" class="arhive-aside__item">
+										<img src="img/blog/arrow-right.png" alt=""> 2011
+									</a>
+								</div>
+							</div>
+	
+							<!--? Partner -->
+							<!-- <div class="aside__partner partner-aside">
+								@@include('html/_partner.htm',{})
+							</div> -->
+
+						</aside>
+					</div>
+				</div>
+			</div>
+			
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_sprite-icons.htm',{})
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+.live {
+
+   &__content {
+      display: flex;
+      gap: rem(10);
+      margin-bottom: rem(68);
+
+      @media (max-width:$mobile) {
+         flex-wrap: wrap;
+         margin-bottom: rem(35);
+      }
+   }
+
+   // .live__item
+   &__item {
+      width: 33.33333%;
+
+      @media (max-width:$mobile){
+         width: 100%;
+         margin: 0 0 rem(20) 0;
+      }
+   }
+
+   // .live__header
+   &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      background-color: $black;
+
+      height: rem(50);
+      width: 100%;
+
+      padding: 0 rem(20);
+   }
+
+   // .live__name
+   &__name {
+      display: inline;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: rem(18);
+
+      span {
+         font-weight: 300;
+         font-style: italic;
+         font-size: rem(18)
+      }
+   }
+
+   // .live__place
+   &__place {
+      display: inline;
+      font-weight: 700;
+      font-size: rem(11);
+   }
+   
+   &__video {
+      position: relative;
+      aspect-ratio: 16 / 9;
+   }
+
+   &__video iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+   }
+
+
+   //! або такий варіант виконання адаптиву 
+   // ====================================
+   // &__video {
+   //    position: relative;
+   //    overflow: hidden;
+    
+   //    &:before {
+   //      content: '';
+   //      display: block;
+   //      padding-top: 56.25%;
+   //    }
+    
+   //    iframe,
+   //    video,
+   //    object,
+   //    embed {
+   //      width: 100%;
+   //      height: 100%;
+      
+   //      position: absolute;
+   //      top: 0;
+   //      left: 0;
+   //      z-index: 1;
+   //    }
+   // }
+}
+ 

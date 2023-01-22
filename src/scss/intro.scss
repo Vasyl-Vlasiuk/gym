@@ -1,0 +1,44 @@
+.intro {
+   border-bottom: rem(10) solid $black;
+   background-image: url(../img/intro-bg.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+
+   // .intro__inner
+   &__inner {
+      display: flex;
+      width: 100%;
+      height: rem(309);
+      @include adaptiveValue("height", 310, 160 );
+      margin-bottom: -1px;
+   }
+   
+   // .intro__text
+   &__text {
+      display: inline-flex;
+      align-self: end;
+      justify-content: center;
+      align-items: center;
+      width: rem(200);
+      height: rem(50);
+      @include adaptiveValue("width", 200, 130);
+      @include adaptiveValue("height", 50, 35);
+      
+      @include adaptiveValue("font-size", 30, 20);
+      font-weight: 300;
+      text-transform: uppercase;
+      color: #fff;
+      background-color: $black;
+   }
+
+   // .intro__text-long-box
+   &__text-long-box {
+      width: rem(400);
+
+      span {
+         @include adaptiveValue("font-size", 18, 12);
+         padding-left: rem(8);
+      }
+   }
+}
